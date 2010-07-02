@@ -1,6 +1,7 @@
 \documentclass[a4paper,10pt]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[italian,english]{babel}
+\usepackage{graphicx}
 \usepackage{url}
 
 \selectlanguage{italian}
@@ -54,7 +55,12 @@ nell'unico albergo rimasto aperto. Sarebbe possibile procedere come prima, ma so
 \end{quote}
 Anche in questo caso è possibile risolvere il paradosso, anche se in un modo più complesso e non discutibile in questa sede.
 
-
+\begin{figure}[t]
+ \centering
+ \includegraphics{./pics/escher[3].jpg}
+ % escher[3].jpg: 480x480 pixel, 96dpi, 12.70x12.70 cm, bb=0 0 360 360
+ \caption{\textsc{M. Escher}, \textit{Galleria di stampe}, 1956.}
+\end{figure}
 
 \section[Geometrie non euclidee]{Geometrie non euclidee -- ovvero la fine del realismo e la scoperta del potere della mente}
 
@@ -70,7 +76,6 @@ oppure in modo equivalente:
 \begin{quote}
  Data una qualsiasi retta r ed un punto P non appartenente ad essa, è possibile tracciare per P una ed una sola retta parallela alla retta r data.
 \end{quote}
-
 
 Essendo falliti tutti i tentativi precedenti di dimostrazioni costruttive, il matematico italiano Gerolamo Saccheri pubblicò nel 1773 un'opera in cui tentava di arrivare ad una dimostrazione dell'assioma per assurdo.
 
@@ -93,14 +98,14 @@ Nel volume \textit{Grundlagen der geometrie} \cite{grundlagen} (1899), Hilbert f
 La grande potenza di questo approcio è che, formalizzando ed astraendo tutti i concetti, e rendendolo “un gioco di puri segni”, ogni teorema ricavato può essere applicato a qualunque ente reale che ne provi gli assiomi. Questa concezione è stata essenziale sia per lo sviluppo di teorie come quella della relatività generale, che fa appunto uso di geometrie non euclidee per descrivere l'universo su scale non banali, ma anche per teorie quali quella della probabilità (nella sua formulazione assiomatica), che risolverà gli annosi problemi legati alla sua formulazione classica.
 
 
-\subsection[L'inizio del formalismo]{Il programma di Hilbert -- Il 900 -- L'inizio del formalismo}
+\subsection[L'inizio del formalismo]{Il programma di Hilbert: l'inizio del formalismo}
 Analizziamo ora più in dettaglio la genesi del formalismo Hilbertiano.
 L'obiettivo di Hilbert era quello di cercare di dare alla matematica basi solide e certe, e nel fare ciò riordinare le varie branche e i vari rapporti che tra esse intercorrevano, cercando una \textquotedblleft teoria prima\textquotedblright\ da cui discendessero tutte le altre.
 
 Per fare ciò occorreva:
 \begin{itemize}
  \item Formalizzare tutta la matematica, in modo da identificare in modo rigoroso e preciso le varie entità, e definirne le proprietà e le regole di interazione in modo ben preciso.
- \item Provare la \textbf{completezza} del sistema, cioè che questa formalizzazione provi tutte le asserzioni vere e confuti quelle false.
+ \item Provare la \textbf{completezza} del sistema, cioè che questa formalizzazione provi tutte le asserzioni vere e confuti tutte quelle false.
  \item Provare la \textbf{coerenza} del sistema, cioè provare che non si possano generare asserzioni contraddittorie all'interno del sistema. Questa dimostrazione avrebbe (preferibilmente) dovuto utilizzare metodi finitistici quando applicata ad entità finite.
  \item Provare che ogni risultato ottenuto mediante i simboli \textquotedblleft ideali\textquotedblright\ possa essere ottenuta anche attraverso i simboli reali.
  \item Avere un algoritmo per decidere la verità o la falsità di qualunque asserzione matematica. Questa proprietà è anche detta anche decidibilità.
@@ -168,6 +173,13 @@ Cominciamo considerando solo in numeri tra uno e nove. L'ordine è il seguente:
   \item uno
 \end{enumerate}
 
+\begin{figure}[b!]
+ \centering
+ \includegraphics[width=128]{./pics/128px-KG_signature.png}
+ % 128px-Kurt_Gödel_signature.svg.png: 128x43 pixel, 72dpi, 4.52x1.52 cm, bb=0 0 128 43
+ \caption{La firma di Kurt Gödel}
+\end{figure}
+
 Vediamo facilmente che cercando il precedente del numero due si trova numero cinque. Ma se tentiamo di ordinare in questo modo tutti i numeri naturali, ne troviamo infiniti: c'è infatti il cinque, seguito da tutti i numeri che hanno “cinque-” come radice: il cinquantacinque, il cinquantadue, il cinquecentodue, eccetera\dots
 
 Dunque non esiste un modo per avere, in ordine alfabetico, l'elenco completo di tutti i numeri cardinali. Si dice che non è possibile \textit{enumerare} in questo modo i numeri cardinali. Questo è differente per quanto riguarda le teorie formali, con importantissime conseguenze dal punto di vista della teoria del calcolo.
@@ -221,7 +233,7 @@ La validità del teorema di Gödel è stata dimostrata anche in questo caso, ma 
 
 \section{Gödel, malintesi ed eredità}
 Il teorema di Gödel è spesso popolarmente considerato un limite invalicabile alla ricerca matematica, che potrebbe influenzarla in modo importante, e che porrebbe un limite serio alla nostra conoscenza della matematica.
-Nonostante le grandi conseguenze filosofiche e personali che ci si potrebbe aspettare da una dimostrazione simile, il teorema di Gödel è risultato un teorema particolarmente sterile. A parte alcune applicazioni nella teoria del calcolo, specie nella crittografia, che analizzeremo meglio nel prossimo paragrafo, questo non ha creato quasi alcun problema ai matematici.
+Nonostante le grandi conseguenze filosofiche e personali che ci si potrebbe attendere da una dimostrazione simile, il teorema di Gödel è risultato un teorema particolarmente sterile. A parte alcune applicazioni nella teoria del calcolo (specie nella crittografia), che analizzeremo meglio nel prossimo paragrafo, questo teorema non ha creato quasi alcun problema ai matematici.
 
 In effetti Gödel dimostra che le proposizioni indecidibili sono sì molte, ma fondamentalmente inutili ai fini pratici, o comunque non interessanti.
 
@@ -239,17 +251,24 @@ Infatti non è garantito che il cervello sia una macchina coerente, né che sia 
 
 Altre cattive interpretazioni del teorema vengono descritte nella sezione 6.1 riguardante l'intelligenza artificiale.
 
+\begin{figure}[t!]
+ \centering
+ \includegraphics[width=343]{./pics/drawing_hands.jpg}
+ % drawing_hands.jpg: 1223x1044 pixel, 72dpi, 43.14x36.83 cm, bb=0 0 1223 1044
+ \caption{\textsc{M. Escher}, \textit{Mani che si disegnano}, 1948.}
+\end{figure}
+
 \section{Informatica e teoremi di Gödel}
 
-Interessante è però la formulazione del teorema in termini informatici, sia quella di Alan Turing, e soprattutto quella da parte di Chaitin.
+Interessante è comunque la formulazione del teorema posta in termini informatici, sia quella di Alan Turing, e soprattutto quella da parte di Chaitin.
 Il teorema di Turing può essere descritto a parole dicendo che qualunque computer programmabile è incompleto, e non può dunque decidere in anticipo su tutti i problemi che riguardano il suo comportamento.
 Dunque, la decidibilità è un concetto più forte della completezza; se così non fosse, si potrebbe scrivere un programma che, enumerando i vari teoremi, dimostri per forza (data la completezza) o la proposizione o la sua negazione (data la coerenza).
 Per quanto riguarda la tesi di Chaitin, citiamo il professor Odifreddi, che è molto chiaro a riguardo, nel suo saggio \cite{metamorfosi}:
 \begin{quote}
-Consideriamo il concetto di numero casuale, tale cioè che qualunque programma che lo stampi non possa avere lunghezza minore di quella del numero stesso: in questo caso la rappresentazione del numero è la sua più corta descrizione, e non è possibile comprimerla sostanzialmente (come invece è possibile, ad esempio, per HYP numero costituito da un 1 seguito da un miliardo di 0HYP, descrizione che richiede sostanzialmente meno di un miliardo di lettere).
-Si ha ora la seguente forma del teorema di Gödel: un sistema matematico corretto può provare la casualità soltanto di un numero finito di numeri casuali. Se così non fosse, esisterebbe un programma pn che lavora come segue: si generano i teoremi del sistema formale, fino a trovare un numero casuale di lunghezza maggiore di $n$, e lo si stampa. Poiche i programmi pn sono tutti uguali eccetto che per la menzione del numero n, essi hanno una lunghezza costituita da una parte fissa (una costante $c$) più una parte variabile (di lunghezza uguale alla lunghezza di n, cioè $\log n$); ed il numero stampato dal programma pn è un numero casuale di lunghezza maggiore di n.
+Consideriamo il concetto di numero casuale, tale cioè che qualunque programma che lo stampi non possa avere lunghezza minore di quella del numero stesso: in questo caso la rappresentazione del numero è la sua più corta descrizione, e non è possibile comprimerla sostanzialmente (come invece è possibile, ad esempio, per \textquotedblleft numero costituito da un 1 seguito da un miliardo di 0\textquotedblright, descrizione che richiede sostanzialmente meno di un miliardo di lettere).
+Si ha ora la seguente forma del teorema di Gödel: un sistema matematico corretto può provare la casualità soltanto di un numero finito di numeri casuali. Se così non fosse, esisterebbe un programma pn che lavora come segue: si generano i teoremi del sistema formale, fino a trovare un numero casuale di lunghezza maggiore di $n$, e lo si stampa. Poiché i programmi $Pn$ sono tutti uguali eccetto che per la menzione del numero $n$, essi hanno una lunghezza costituita da una parte fissa (una costante $c$) più una parte variabile (di lunghezza uguale alla lunghezza di $n$, cioè $\log(n)$); ed il numero stampato dal programma pn è un numero casuale di lunghezza maggiore di $n$.
 
-Ma se n è sufficientemente grande questo è impossibile: $n$ è infatti maggiore di $c + \log(n)$, e quindi il numero stampato da pn ha lunghezza maggiore di quella di un programma che lo stampa, cioè non può essere casuale.
+Ma se $n$ è sufficientemente grande questo è impossibile: $n$ è infatti maggiore di $c + \log(n)$, e quindi il numero stampato da pn ha lunghezza maggiore di quella di un programma che lo stampa, cioè non può essere casuale.
 Il vantaggio della formulazione di Chaitin nei confronti di quelle di Gödel e Turing è duplice: essa non richiede autoriferimenti nella dimostrazione, ed esibisce enunciati veri ma non dimostrabili di interesse matematico (e non soltanto logico).
 \end{quote}
 
@@ -278,12 +297,12 @@ Besides, what best proof of self knowledge than knowing one's own limits?
 \selectlanguage{italian}
 \section{Reminescenze filosofiche}
 
-Ma il teorema di incompletezza di Gödel non è una completa novità del novecento. Già Immanuel Kant, sia nella \textit{Critica della ragion pura} \cite{critica-ragion-pura} che nei \textit{Prolegomeni ad ogni metafisica futura} \cite{prolegomeni}, propone tra i suoi punti fondamentali l'incompletezza della ragione.
+Il teorema di incompletezza di Gödel non è però una completa novità del Novecento. Già Immanuel Kant, sia nella \textit{Critica della ragion pura} \cite{critica-ragion-pura} che nei \textit{Prolegomeni ad ogni metafisica futura} \cite{prolegomeni}, propone tra i suoi punti fondamentali l'incompletezza della ragione.
 
-Il sistema di Kant può essere vagamente descritto parlando delle \textquotedblleft idee trascendentali\textquotedblright, che non sono altro che i concetti derivanti dalle categorie di relazione, quando sono portate all'estremo. Ad esempio, il limite della disgiunzione è una disgiunzione omnicomprensiva che abbracci tutto, e viene chiamato \textit{mondo}.
+Il sistema di Kant può essere sommariamente descritto parlando delle \textquotedblleft idee trascendentali\textquotedblright, che non sono altro che i concetti derivanti dalle categorie di relazione, quando sono portate all'estremo. Ad esempio, il limite della disgiunzione è una disgiunzione omnicomprensiva che abbracci tutto, e viene chiamato \textit{mondo}.
 
 Ora, i filosofi razionalisti quali Leibniz e Cartesio, basando la loro filosofia sulla ragione (oltre che sul dubbio sistematico), avevano tentato di arrivare a una dimostrazione di queste idee trascendentali.
-Kant però mostra come ogni dimostrazione di queste sia inevitabilmente destinata a fallire. Infatti, mediante le quattro antinomie, mostra che le idee trascendentali sono contraddittorie, e ne dedusse che, richiedendo la completezza della ragione, si cade inevitabilmente nell'inconsistenza.
+Kant però mostra come ogni dimostrazione di queste sia inevitabilmente destinata a fallire. Infatti, mediante le quattro antinomie, mostra che le idee trascendentali sono contraddittorie, e ne deduce che, richiedendo la completezza della ragione, si cade inevitabilmente nell'inconsistenza.
 
 Sempre il prof. P. Odifreddi sostiene \cite{metamorfosi} che:
 \begin{quotation}
@@ -308,5 +327,7 @@ Questa tesina è stata realizzata attraverso l'uso esclusivo di Software Libero.
 
 \bibliographystyle{siam}
 \bibliography{tesina}
+
+\listoffigures
 
 \end{document}
