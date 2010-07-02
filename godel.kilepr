@@ -1,0 +1,44 @@
+[General]
+def_graphic_ext=pdf
+img_extIsRegExp=false
+img_extensions=.eps .jpg .jpeg .png .pdf .ps .fig .gif
+kileprversion=2
+kileversion=2.0.83
+lastDocument=tesina.tex
+masterDocument=tesina.tex
+name=Gödel
+pkg_extIsRegExp=false
+pkg_extensions=.cls .sty .bbx .cbx .lbx
+src_extIsRegExp=false
+src_extensions=.tex .ltx .latex .dtx .ins
+
+[Tools]
+MakeIndex=
+QuickBuild=
+
+[item:godel.kilepr]
+archive=true
+column=6422636
+encoding=
+highlight=
+line=0
+open=false
+order=-1
+
+[item:tesina.bib]
+archive=true
+column=169972736
+encoding=
+highlight=
+line=0
+open=true
+order=-1
+
+[item:tesina.tex]
+archive=true
+column=30
+encoding=UTF-8
+highlight=LaTeX
+line=12
+open=true
+order=0
