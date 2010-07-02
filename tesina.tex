@@ -3,6 +3,7 @@
 \usepackage[italian,english]{babel}
 \usepackage{graphicx}
 \usepackage{url}
+\usepackage{wrapfig}
 
 \selectlanguage{italian}
 
@@ -18,11 +19,13 @@
 \cleardoublepage
 \tableofcontents
 \cleardoublepage
-\section[Realismo (un'eterna chimera)]{Realismo (una eterna chimera) -- ovvero costruisco quindi penso}
+\section[Realismo (un'eterna chimera)]{Realismo (un'eterna chimera): ovvero costruisco quindi penso}
 Nell'antichità, il ruolo del geometra (mestiere al tempo considerato molto simile all'odierno matematico), era strettamente connesso a quello del filosofo, indagatore della realtà e della natura del mondo. Basti pensare infatti solamente alla celeberrima scritta sulla porta della scuola platonica, che ammoniva: “\textit{non entri chi non è geometra}”. Le forme matematiche erano addirittura le mediatrici tra il mondo delle idee e quello reale.
 
 Che questa frase sia più o meno connessa con l'argomento di questa tesina, poco importa: ciò che è interessante, e che mi preme sottolineare, è che nell'antichità il geometra veniva visto come colui che studiava elementi naturali, reali, che erano dotati di una propria consistenza e vita al di fuori della mente umana.
-Quando Euclide riformulò le basi della geometria, creando solide basi che sarebbero state usate fino alla seconda metà dell'ottocento, non si sarebbe mai posto la domanda se tutto il suo lavoro poteva effettivamente essere valido, ovvero coerente con sé stesso. Euclide era solo preoccupato che fosse in grado di dimostrare qualunque teorema effettivamente dimostrabile. Egli infatti pensava, implicitamente, di stare semplicemente descrivendo il mondo naturale: essendo questo esistente, la coerenza e la completezza erano già date per acquisite. Questa posizione filosofica è anche detta realismo.
+Quando Euclide riformulò le basi della geometria, creando solide basi che sarebbero state usate fino alla seconda metà dell'ottocento, non si sarebbe mai posto la domanda se tutto il suo lavoro poteva effettivamente essere valido, ovvero coerente con sé stesso. Euclide era solo preoccupato che fosse in grado di dimostrare qualunque teorema effettivamente dimostrabile. Egli infatti pensava, implicitamente, di stare semplicemente descrivendo il mondo naturale: essendo questo esistente, la coerenza e la completezza erano già date per acquisite.
+
+Questa posizione filosofica è anche detta realismo.
 
 \subsection{Il problema dell'infinito e tutti i suoi paradossi}
 
@@ -57,12 +60,12 @@ Anche in questo caso è possibile risolvere il paradosso, anche se in un modo pi
 
 \begin{figure}[t]
  \centering
- \includegraphics{./pics/escher[3].jpg}
+ \includegraphics[width=343px]{./pics/escher[3].jpg}
  % escher[3].jpg: 480x480 pixel, 96dpi, 12.70x12.70 cm, bb=0 0 360 360
  \caption{\textsc{M. Escher}, \textit{Galleria di stampe}, 1956.}
 \end{figure}
 
-\section[Geometrie non euclidee]{Geometrie non euclidee -- ovvero la fine del realismo e la scoperta del potere della mente}
+\section[Geometrie non euclidee]{Geometrie non euclidee: ovvero la fine del realismo e la scoperta del potere della mente}
 
 La rassicurante idea realista fu destinata ad essere sconvolta nel XIX secolo, specialmente grazie al lavoro del brillante matematico tedesco David Hilbert.
 Hilbert arrivò già a cavallo del 1900, dopo diverse generazione di matematici che, scoperto che Euclide aveva incluso alcuni assiomi ridondanti (ovvero alcuni assiomi non erano altro che teoremi derivabili dagli altri), si erano dati alla “caccia all'errore” all'interno degli Elementi, senza rendersi conto che stavano per spalancare una immensa area di nuova ricerca per la matematica.
@@ -92,9 +95,19 @@ Chi può negare, sulla base di effettive misurazioni, che esistano più parallel
 Pur essendo basata su motivazioni fisiche (egli infatti questionava la possibilità di effettuare misurazioni particolarmente precise), la sua intuizione fu vincente. Oggigiorno Lobačevskij è ricordato come uno dei padri fondatori delle geometrie non-euclidee, pubblicando già nel 1826 i primi i teoremi di quella che oggi è nota come geometria iperbolica. \nocite{wp-geometria-iperbolica}
 
 \section{Hilbert e il formalismo: ovvero penso quindi costruisco}
+
+\begin{wrapfigure}{r}{0.5\textwidth}
+ \begin{center}
+  \includegraphics[width=150px]{./pics/hilbert2.jpg}
+  % hilbert2.jpg: 354x577 pixel, 72dpi, 12.49x20.36 cm, bb=0 0 354 577  
+ \end{center}
+\caption{Ritratto di David Hilbert}
+\end{wrapfigure}
+
 È a questo punto che David Hilbert entra in gioco.
 Il principale merito di Hilbert fu di aver pensato alla geometria e agli enti geometrici, non tanto come enti reali, ma come pure creazioni del nostro pensiero. Invece di descrivere in modo corretto o non corretto una realtà, nella concezione formalista questi sono enti puramente logici e svuotati di ogni significato concreto, tra i quali le uniche relazioni che intercorrono sono quelle che noi decidiamo di fargli intercorrere.
 Nel volume \textit{Grundlagen der geometrie} \cite{grundlagen} (1899), Hilbert fondamentalmente riscrive un testo analogo agli \textit{Elementi} di Euclide cercando di fornire alla geometria le solide basi logiche che già analisi e algebra avevano acquisito.
+
 La grande potenza di questo approcio è che, formalizzando ed astraendo tutti i concetti, e rendendolo “un gioco di puri segni”, ogni teorema ricavato può essere applicato a qualunque ente reale che ne provi gli assiomi. Questa concezione è stata essenziale sia per lo sviluppo di teorie come quella della relatività generale, che fa appunto uso di geometrie non euclidee per descrivere l'universo su scale non banali, ma anche per teorie quali quella della probabilità (nella sua formulazione assiomatica), che risolverà gli annosi problemi legati alla sua formulazione classica.
 
 
@@ -121,6 +134,14 @@ Tutte queste deduzioni sono fatte in modo rigorosamente formale, senza badare al
 Hilbert inoltre pubblica una serie di problemi che la matematica deve risolvere per poter raggiungere l'assiomatizzazione completa. Questi 23 problemi, in parte ancora irrisolti, continuano ad essere una grande sfida per i matematici, e sono considerati di fondamentale importanza per lo sviluppo di questa disciplina.
 
 Il formalismo riscosse molto interesse nei contemporanei di Hilbert. Il primo che riuscì ad arrivare ad una formalizzazione completa fu però il matematico tedesco Gottlob Frege. Egli assiomatizzò completamente l'aritmetica basandola sulla teoria degli insiemi, e pubblicando i suoi risultati nel \textit{Die Grundgesetze der Arithmetik} (Le leggi fondamentali dell'aritmetica). Frege scelse l'aritmetica in quanto era una delle discipline più semplici nella quale praticamente ogni altra ha le sue radici.
+
+\begin{figure}[b!]
+ \begin{center}
+  \includegraphics[width=\textwidth,keepaspectratio=true]{./pics/98210399zbOcyG_fs.jpg}  
+ \end{center}
+ % 98210399zbOcyG_fs.jpg: 1608x1267 pixel, 72dpi, 56.73x44.70 cm, bb=0 0 1608 1267
+ \caption{\textsc{M. Escher}, \textit{Rettili}, 1943.}
+\end{figure}
 
 \subsubsection[Il problema coerenza]{Il problema del progetto di Hilbert: la coerenza}
 Il sistema Hilbertiano però, pur essndo molto potente e pieno di potenzialità rispetto al sistema euclideo, ha da risolvere il problema della coerenza. Il metro di paragone infatti non è più la realtà, autoevidentemente coerente (a detta di Euclide), questi assiomi potrebbero essere contrastanti tra loro, decadendo dunque in un sistema inconsistente, dove si potrebbe dimostrare sia ogni proposizione che il suo contrario. In termini logici: $ \forall x (p(x)\wedge\neg p(x))$.
@@ -175,7 +196,7 @@ Cominciamo considerando solo in numeri tra uno e nove. L'ordine è il seguente:
 
 \begin{figure}[b!]
  \centering
- \includegraphics[width=128]{./pics/128px-KG_signature.png}
+ \includegraphics[width=128px]{./pics/128px-KG_signature.png}
  % 128px-Kurt_Gödel_signature.svg.png: 128x43 pixel, 72dpi, 4.52x1.52 cm, bb=0 0 128 43
  \caption{La firma di Kurt Gödel}
 \end{figure}
@@ -253,7 +274,7 @@ Altre cattive interpretazioni del teorema vengono descritte nella sezione 6.1 ri
 
 \begin{figure}[t!]
  \centering
- \includegraphics[width=343]{./pics/drawing_hands.jpg}
+ \includegraphics[width=\textwidth]{./pics/drawing_hands.jpg}
  % drawing_hands.jpg: 1223x1044 pixel, 72dpi, 43.14x36.83 cm, bb=0 0 1223 1044
  \caption{\textsc{M. Escher}, \textit{Mani che si disegnano}, 1948.}
 \end{figure}
